@@ -1,23 +1,15 @@
-//
-//  ViewController.swift
-//  AllTheBasics
-//
-//  Created by James Campagno on 6/28/16.
-//  Copyright © 2016 Flatiron School. All rights reserved.
-//
+import Foundation
 
-import UIKit
-
-class ViewController: UIViewController {
-    
-    
-    
-    
-    
-    // Implement your functions here
-    
-    
-    
-    
-
+func prob2(username: String, password: Int) -> String{
+    if ((password%3 == 0) && (username == "Jerry")) {
+        return "Hello Jerry"
+        }
+        else if ((password%3 == 0) && (username == "Elaine")) {
+        return "hello elaine"
+        }
+        else if((password%3 == 0) && (username == "Michael")) {
+        return "Hello Michael"
+        } else {
+        return "wrong"
+        }
 }
